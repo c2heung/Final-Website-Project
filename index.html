@@ -59,12 +59,13 @@ h1 {
 img {
     max-width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .flex-item {
@@ -85,23 +86,82 @@ th, td {
     text-align: left;
 }
 
+#section0 {
+  h1{
+    font-size: 38px;
+    margin-top: 4rem;
+  }
+    p{
+      text-align: right;
+      font-size: 12px;
+    }
+  img{
+     max-width: 643px;
+    max-height: 838px;
+  }
+  .reserve-spot {
+    margin-top: 2rem;
+    text-align: right;
+}
+
+.reserve-spot a {
+    color: #FF286C;
+    text-decoration: none;
+}
+  }
+  
+#section1 {
+  h2{
+    font-size: 18px;
+    font-weight: bold;
+    color: #EA5858;
+    margin-top: 3rem;
+  } 
+  p{
+    font-size: 14px;
+  }
+  img{
+    max-width: 471px;
+    max-height: 614px;
+  }
+}
+
+#section2 {
+  img{
+    max-width: 361px;
+    max-height: 502px;
+    margin-top: 70px;
+  }
+}
+  
 #section3 {
-    background-color: grey;
+  position: relative;
+  height: 100vh;
+  background-image: url('LKF.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  h1, p{
+    max-width: 772px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4rem;
+
+  }
 }
 
 #section4 {
     background-color: #D4D4D4;
     color: black;
+  img{
+    max-width: 350px;
+    max-height: 232px;
+  }
 }
 
-.reserve-spot {
-    margin-top: 1rem;
-}
 
-.reserve-spot a:hover {
-    color: #FF286C;
-    text-decoration: none;
-}
 
 @media (max-width: 768px) {
     .navbar ul {
@@ -123,11 +183,12 @@ th, td {
 <body>
     <nav class="navbar">
         <ul>
-            <li><a href="#section4">FAQ</a></li>
-            <li><a href="#section3">RSVP</a></li>
-            <li><a href="#section2">SCHEDULE</a></li>
-            <li><a href="#section1">WHAT</a></li>
-            <li><a href="#section0">HOME</a></li>
+          <li><a href="#section0">HOME</a></li>
+          <li><a href="#section1">WHAT</a></li>
+          <li><a href="#section2">SCHEDULE</a></li>
+          <li><a href="#section3">RSVP</a></li>
+          <li><a href="#section4">FAQ</a></li>
+            
         </ul>
     </nav>
 
@@ -139,9 +200,16 @@ th, td {
             <div class="flex-item">
                 <h1>ARE YOU<br>READY?</h1>
                 <p>
-                    Slip into the neon glow of Lan Kwai Fong—a place where the night never ends, and the city feels alive just for you. Think dimly lit alleys, electric beats, and the kind of chaos that feels a little too perfect.
-                    <!-- ... rest of the paragraph ... -->
-                </p>
+                  Slip into the neon glow of Lan Kwai Fong—a place where the night never ends, and the city feels alive just for you. Think dimly lit alleys, electric beats, and the kind of chaos that feels a little too perfect.
+                  <br>
+                  <br>
+                  We’ve got moody lights, street food that tastes like midnight, and drinks strong enough to make you forget what time it is. Lose yourself in the sound, the glow, and maybe a little bit of that bittersweet vibe only the best nights out bring.<br>
+                  <br>
+                  <b>🖤 When: December 12 2024<br></b>
+                  <b>🖤 Where: The Velvet Room<br></b>
+                  <br>
+                  Come as you are, or whoever you feel like being tonight. Just don’t miss the chance to live like the city’s alive for you.
+                <br>                </p>
                 <div class="reserve-spot">
                     <a href="mailto:c2heung@uwaterloo.ca">Reserve a spot now</a>
                 </div>
@@ -176,8 +244,14 @@ th, td {
             <div class="flex-item">
                 <h1>EVENT SCHEDULE</h1>
                 <table>
-                    <!-- ... table content ... -->
-                </table>
+    <tr><td>8:00 PM – Doors Open</td></tr>
+    <tr><td>8:30 PM – DJ Set #1</td></tr>
+    <tr><td>9:30 PM – Food + Drink Specials</td></tr>
+    <tr><td>11:00 PM – Live Performance (<small>A special surprise guest</small>)</td></tr>
+    <tr><td>11:30 PM – DJ Set #3</td></tr>
+    <tr><td>12:30 AM – Midnight Chill</td></tr>
+    <tr><td>1:00 AM – Dance ‘Til Dawn</td></tr>
+    <tr><td>2:00 AM – Event Close</td></tr>                </table>
             </div>
         </div>
     </section>
@@ -185,17 +259,56 @@ th, td {
     <section id="section3">
         <h1>RSVP</h1>
         <p>
-            Ready to join us for a night you won't forget? To save your spot, simply reach out to us via email or text.
-            <!-- ... rest of the RSVP content ... -->
-        </p>
+            Ready to join us for a night you won't forget? To save your spot, simply reach out to us via email or text.<br>
+          <br>
+          Email: <a href="mailto:c2heung@uwaterloo.ca" style="color: #FFB236; text-decoration: none;">c2heung@uwaterloo.ca</a><br>
+          Text: +1 111 111 1111<br>
+          <br>
+          In your message, just include: <br>
+          <br>
+          - Your full name<br>
+          - How many friends you’re bringing<br>
+          - Any special requests or questions<br>
+          <br>
+          Once we receive your RSVP, we’ll send you all the details to get you ready for an unforgettable night.<br>
+          <br>
+          Don’t wait too long — spots are limited!        
+      </p>
     </section>
 
     <section id="section4">
         <div class="flex-container">
             <div class="flex-item">
                 <h1>Frequently Asked Questions</h1>
-                <!-- ... FAQ content ... -->
-            </div>
+<p class="left">
+    <b>1. How old do I need to be to attend?</b><br>
+    This event is for those 19+. Please bring ID for age verification at the door.<br>
+    <br>
+    <b>2. Is there a dress code?</b><br>
+    Wear whatever makes you feel like part of the night!<br>
+    <br>
+    <b>3. What time does the event start and end?</b><br>
+    The event kicks off at 8:00 PM and wraps up at 2:00 AM. Be there early to make the most of the night!<br>
+    <br>
+    <b>4. Can I buy tickets at the door?</b><br>
+    We recommend RSVPing in advance to guarantee your spot. There may be limited availability at the door, so it's best to reserve your place ahead of time.
+  </p>
+  <p class="right">
+    <b>5. What kind of food and drinks will be available?</b><br>
+    We’ll have authentic street food and signature cocktails inspired by the flavours of Hong Kong. Let us know if you have any food allergies when you RSVP.<br>
+    <br>
+    <b>6. Is there parking available?</b><br>
+    There is limited parking around the venue, but we recommend using public transportation or ride share services to make getting to and from the event easier.<br>
+    <br>
+    <b>7. Is smoking allowed at the event?</b><br>
+    Smoking is not permitted inside the venue. If you need to step out for a smoke, please use the designated smoking area outside.<br>
+    <br>
+    <br>
+    <br>
+    <i>Got more questions?<br>
+    Feel free to reach out via email or text!</i>      
+              </p>
+          </div>
             <div class="flex-item">
                 <img src="LKFSign.jpeg" alt="LKF">
             </div>
