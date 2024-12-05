@@ -78,6 +78,7 @@ table {
     border-collapse: collapse;
     width: 100%;
     margin-top: 1rem;
+    right: 50px;
 }
 
 th, td {
@@ -96,8 +97,8 @@ th, td {
       right: 50px;
       top: 335px;
       text-align: right;
-      font-size: 12px;
-      max-width: 350px;
+      font-size: 14px;
+      max-width: 420px;
     }
   img{
      max-width: 643px;
@@ -106,7 +107,7 @@ th, td {
   .reserve-spot {
     position: absolute;
     right: 50px;
-    top: 668px;
+    top: 700px;
     margin-top: 2rem;
     text-align: right;
 }
@@ -118,26 +119,49 @@ th, td {
   }
   
 #section1 {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  gap: 2rem;
+  padding: 2rem;
+  
   h2{
     font-size: 18px;
     font-weight: bold;
     color: #EA5858;
     margin-top: 3rem;
+    margin-left: 2rem;
   } 
   p{
     font-size: 14px;
+    margin-left: 2rem;
+
   }
-  img{
+  .flex-item img{
     max-width: 471px;
     max-height: 614px;
+    width: auto;
+    height: auto;
+    margin-right: 2rem;
   }
 }
 
 #section2 {
-  img{
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  .image-container {
+    flex-shrink: 0;
+    margin-right: 2rem;
+  }
+  .table-container {
+    flex-grow: 1;
+    overflow-x: auto;
+  }
+  img {
     max-width: 361px;
     max-height: 502px;
-    margin-top: 70px;
+    margin-top: 70px
   }
 }
   
@@ -240,8 +264,7 @@ th, td {
     </section>
 
     <section id="section1">
-        <div class="flex-container">
-            <div class="flex-item">
+        <div class="flex-item">
                 <h2>Why We're Doing This</h2>
                 <p>
                     Because nightlife should be more than just drinks and music. It should feel like stepping into another world, like you're part of something bigger than yourself. Hong Kong is legendary for nights like that — wild, raw, and unforgettable. So we're bringing the vibe here, for <ins>one night only.</ins>
@@ -255,15 +278,14 @@ th, td {
             <div class="flex-item">
                 <img src="Couple.jpeg" alt="Couple Laughing">
             </div>
-        </div>
+     
     </section>
 
     <section id="section2">
-        <div class="flex-container">
-            <div class="flex-item">
+        <div class="image-container">
                 <img src="Club.jpeg" alt="Clubbing">
             </div>
-            <div class="flex-item">
+            <div class="table-container">
                 <h1>EVENT SCHEDULE</h1>
                 <table>
     <tr><td>8:00 PM – Doors Open</td></tr>
@@ -275,7 +297,7 @@ th, td {
     <tr><td>1:00 AM – Dance ‘Til Dawn</td></tr>
     <tr><td>2:00 AM – Event Close</td></tr>                </table>
             </div>
-        </div>
+        
     </section>
 
     <section id="section3">
